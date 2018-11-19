@@ -13,7 +13,6 @@
             <a href="#" @click.prevent="$router.push({name: 'articleDetail',params: {id: article._id}})"  class="goanim list-group-item list-group-item-action bg-primary text-light">
                 <div class="d-flex justify-content-between ">
                     <h5 class="mb-1">{{article.title.length > 20 ? article.title.slice(0,20)+'...' : article.title.slice(0,20) }}</h5>
-                    <small>ok</small>
                 </div>
             </a>
         </div>
