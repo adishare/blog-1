@@ -15,7 +15,7 @@ const ArticleController = {
                     model: 'User'
                 }
             })
-            .sort('-updatedAt')
+            .sort('-createdAt')
             .exec()
             .then((articles) => {
                 res.json(articles);

@@ -58,6 +58,8 @@
         methods: {
 
             logNotification(message, status, timeout) {
+                
+                document.body.classList.remove('loading-indicator');
                 this.notificationModel = {
                     status: `alert text-center alert-${status || 'info'} alert-dismissible fade show`,
                     message

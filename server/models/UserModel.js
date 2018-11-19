@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const uniqueValidator = require('mongoose-unique-validator')
+const validator = require('validator')
 
 const UserSchema = new Schema({
 	name: {
@@ -13,7 +14,12 @@ const UserSchema = new Schema({
 		type: String,
 		unique: true,
 		trim: true,
-		required: [true, "Email Required"]
+		required: [true, "Email Required"],
+		validate:{
+			validator: validator.isEmail,
+			message: '{VALUE} is not a valid email',
+			isAsync: false
+		}
 	},
 	password: {
 		type: String,
