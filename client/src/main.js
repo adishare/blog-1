@@ -8,10 +8,10 @@ Vue.config.productionTip = false
 
 
 const server = axios.create({
-  baseURL:'http://localhost:3000'
+  baseURL:'https://h8ikeblog-api.adishare.online'
 })
 Vue.prototype.$server = server
-Vue.prototype.$clientBaseUrl = 'http://localhost:8080'
+Vue.prototype.$clientBaseUrl = 'https://h8ikeblog.firebaseapp.com'
 
 
 new Vue({

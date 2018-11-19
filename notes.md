@@ -1,3 +1,8 @@
+client: https://h8ikeblog.firebaseapp.com
+server: https://h8ikeblog-api.adishare.online
+
+ENV
+
 NODE_ENV=dev
 JWTSECRET=rahasia
 GOOGLE_CLIENT_ID=1066847027273-3414naubmjmj7c5ev82tsjpfkkp3bvjm.apps.googleusercontent.com
