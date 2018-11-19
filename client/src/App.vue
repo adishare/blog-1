@@ -10,7 +10,7 @@
             <transition name="fade" mode="out-in">
                 <div v-if="notificationModel.status" :class="notificationModel.status" role="alert">
                     <span class="text-center"> {{notificationModel.message}} </span>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <button type="button" class="pull-right close" @click="notificationModel={}" >
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -67,6 +67,7 @@
                 if (timeout) {
                     setTimeout(() => {
                         this.notificationModel = {}
+
                     }, timeout);
                 }
             },
